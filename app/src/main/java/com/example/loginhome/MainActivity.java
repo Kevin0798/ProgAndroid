@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 if (EmailText.getText().toString().matches(emailPattern)){
                     if (!EmailText.getText().toString().isEmpty() && !PasswordText.getText().toString().isEmpty() ){
                         openActivity();
+                        Toast.makeText(getApplicationContext(), "Welcome", Toast.LENGTH_SHORT).show();
                     }
 
                 }
